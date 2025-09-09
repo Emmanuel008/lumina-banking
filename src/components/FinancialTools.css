@@ -1,0 +1,277 @@
+/* Financial Tools Section */
+.financial-tools {
+  padding: 100px 0 100px 0;
+  background: #ffffff;
+  position: relative;
+  margin-top: -50px;
+  border-radius: 50px 50px 0 0;
+  z-index: 10;
+}
+
+.financial-tools-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.financial-tools-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Left Content */
+.content-left {
+  padding-right: 40px;
+}
+
+.financial-heading {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 30px;
+  line-height: 1.1;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  letter-spacing: -0.02em;
+}
+
+.financial-description {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #000000 !important;
+  max-width: 500px;
+}
+
+.content-left .financial-description {
+  color: #000000 !important;
+}
+
+.financial-tools .financial-description {
+  color: #000000 !important;
+}
+
+/* Right Content - Cards Container */
+.content-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+}
+
+.feature-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 24px;
+  padding: 40px 30px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Card 1 - Digital Wallet (Purple) */
+.feature-card:nth-child(1) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Card 2 - Smart Savings (Blue) */
+.feature-card:nth-child(2) {
+  background: linear-gradient(135deg, #2196F3 0%, #21CBF3 100%);
+}
+
+/* Card 3 - Investment Tools (Green) */
+.feature-card:nth-child(3) {
+  background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+}
+
+/* Card 4 - Budget Tracker (Orange) */
+.feature-card:nth-child(4) {
+  background: linear-gradient(135deg, #FF9800 0%, #FF5722 100%);
+}
+
+.feature-card.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Indicators */
+.card-indicators {
+  display: flex;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: #a78bfa;
+  transform: scale(1.2);
+}
+
+.indicator:hover {
+  background: #a78bfa;
+  transform: scale(1.1);
+}
+
+/* Indicator colors matching cards */
+.indicator:nth-child(1).active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.indicator:nth-child(2).active {
+  background: linear-gradient(135deg, #2196F3 0%, #21CBF3 100%);
+}
+
+.indicator:nth-child(3).active {
+  background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+}
+
+.indicator:nth-child(4).active {
+  background: linear-gradient(135deg, #FF9800 0%, #FF5722 100%);
+}
+
+.card-number {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 15px;
+  line-height: 1;
+  text-align: left;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.card-description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: left;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .financial-tools {
+    padding: 80px 0;
+  }
+
+  .financial-tools-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    text-align: center;
+  }
+
+  .content-left {
+    padding-right: 0;
+  }
+
+  .financial-heading {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .financial-description {
+    max-width: 100%;
+  }
+
+  .cards-container {
+    height: 300px;
+  }
+
+  .feature-card {
+    padding: 30px 20px;
+  }
+
+  .card-number {
+    font-size: 3rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .financial-tools {
+    padding: 60px 0;
+  }
+
+  .financial-heading {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .financial-description {
+    font-size: 1rem;
+  }
+
+  .cards-container {
+    height: 280px;
+  }
+
+  .feature-card {
+    padding: 25px 15px;
+  }
+
+  .card-number {
+    font-size: 2.5rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+  }
+}
