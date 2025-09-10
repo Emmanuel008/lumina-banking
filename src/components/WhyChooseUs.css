@@ -24,7 +24,7 @@
 .why-choose-heading {
   font-size: 4rem;
   font-weight: 800;
-  color: #ffffff !important;
+  color: #a78bfa !important;
   text-transform: uppercase;
   letter-spacing: -0.02em;
   margin-bottom: 30px;
@@ -54,7 +54,7 @@
 .feature-number {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #2196F3;
+  color: #a78bfa;
   min-width: 40px;
   line-height: 1;
 }
@@ -66,7 +66,7 @@
 .feature-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #2196F3;
+  color: #a78bfa;
   margin-bottom: 12px;
   line-height: 1.3;
 }

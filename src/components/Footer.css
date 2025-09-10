@@ -92,8 +92,8 @@
 }
 
 .submit-btn {
-  background: #ffffff;
-  color: #1a1a1a;
+  background: #a78bfa;
+  color: #ffffff;
   border: none;
   padding: 12px 24px;
   border-radius: 25px;
@@ -103,11 +103,13 @@
   transition: all 0.3s ease;
   width: fit-content;
   align-self: flex-start;
+  box-shadow: 0 4px 15px rgba(167, 139, 250, 0.3);
 }
 
 .submit-btn:hover {
-  background: #f0f0f0;
-  transform: translateY(-1px);
+  background: #a78bfa;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(167, 139, 250, 0.4);
 }
 
 /* Links Section */
